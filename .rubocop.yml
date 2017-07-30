@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*
+    - bin/*
+    - vendor/**/*
+Rails:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/LineLength:
+  Max: 80
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  IgnoredPatterns:
+    - '^\s*#\s.*'
