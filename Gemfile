@@ -36,11 +36,15 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 
 group :development, :test do
+  # Help to kill N+1 queries and unused eager loading
+  gem 'bullet'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  # Find the unused routes and controller actions
+  gem 'traceroute'
 end
 
 group :development do

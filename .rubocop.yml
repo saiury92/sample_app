@@ -20,3 +20,6 @@ Metrics/LineLength:
     - https
   IgnoredPatterns:
     - '^\s*#\s.*'
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/development.rb
